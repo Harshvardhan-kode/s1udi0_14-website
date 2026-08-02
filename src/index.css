@@ -1,0 +1,36 @@
+:root {
+  --primary-bg: #140A10;
+  --secondary-bg: #FAF8F5;
+  --text-light: #FFF0F5;
+  --text-dark: #2B1B24;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-bg);
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure images don't drag natively when using custom drag components */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
